@@ -1,0 +1,135 @@
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #669;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.page {
+    height: 100%;
+}
+
+.wrap {
+    overflow: hidden;
+    padding: 300px 15%;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#444, #111);
+    box-shadow: 10px 15px 10px #9c9c9c;
+    border-radius: 50%;
+    list-style: none;
+}
+
+.menu__item {
+    position: relative;
+    padding: 10px 30px; 
+    text-decoration: none;
+    color: #669;
+}
+
+.subtitle-menu__item {
+    position: relative;
+}
+
+.menu__link,
+.subtitle-menu__link,
+.subtitle-subtitle-menu__link {
+    text-decoration: none;
+    color: #669;
+}
+
+.menu__item:hover .menu__link,
+.subtitle-menu__item:hover .subtitle-menu__link,
+.subtitle-subtitle-menu__item:hover .subtitle-subtitle-menu__link {
+    color: white;
+}
+
+.menu__item:hover .subtitle-menu,
+.subtitle-menu__item:hover .subtitle-subtitle-menu {
+    display: block;
+}
+
+.subtitle-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #111;
+    text-align: left;
+    padding: 0px 10px;
+    width: 130px;
+    left: 0;
+    top: 45px;
+    border-radius: 7px;
+}
+
+.subtitle-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border: 10px solid #669;
+    border-top-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: auto;
+    height: 0;
+    width: 0;
+}
+
+.subtitle-subtitle-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    text-align: left;
+    padding: 0px 10px;
+    width: 130px;
+    border-radius: 7px;
+    top: 0;
+    left: 140px;
+}
+
+.subtitle-subtitle-menu::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    border: 10px solid #669;
+    border-left-width: 0;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    margin: auto;
+    height: 0;
+    width: 0;
+}
+
+.subtitle-menu__item,
+.subtitle-subtitle-menu__item {
+    position: relative;
+    padding: 3px;
+}
+
+
